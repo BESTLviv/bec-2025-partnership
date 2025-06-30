@@ -1,4 +1,3 @@
-import { Link } from "lucide-react"
 import Image from "next/image"
 
 const logos = [
@@ -17,8 +16,8 @@ const logos = [
 const Sponsors = () => {
   return (
     <section className="container">
-      <h2 className="text-center text-bec text-2xl 580px:text-3xl 700px:text-4xl font-extrabold mb-10 3xl:text-[42px] 4xl:text-5xl 4xl:mb-15">
-        НАС ПІДТРИМУЮТЬ
+      <h2 className="text-center text-bec text-2xl 580px:text-3xl 700px:text-4xl font-extrabold mb-10 3xl:text-[42px] 4xl:text-5xl 4xl:mb-15 uppercase">
+        Торішні партнери
       </h2>
       <div className="flex flex-col gap-8 justify-center items-center">
         <div className="grid grid-cols-2 gap-5 600px:gap-30 max-w-[400px] justify-items-center">
