@@ -1,5 +1,5 @@
 'use client'
-import { forwardRef, useEffect, useState } from "react"
+import { forwardRef, useState } from "react"
 import Image from "next/image"
 import AdditionalOptions from "./ui/AdditionalOptions"
 import Cart from "./Cart"
@@ -9,13 +9,6 @@ import PackageRecruiter from "./ui/PackageRecruiter"
 import packages from "@/data/packages"
 import addOptions from "@/data/additionals"
 import { SelectedPackage } from "@/types/types"
-import { useCountdown } from '../hooks/useCountDown'
-import { Audiowide } from "next/font/google"
-
-const awide = Audiowide({
-  weight: ['400'],
-  subsets: ['latin'],
-});
 
 const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
 
@@ -124,7 +117,7 @@ const Propositions = forwardRef<HTMLDivElement, object>((props, ref) => {
         onRemovePackage={handleRemovePackage}
         onRemoveService={handleRemoveService}
       />
-      <img
+      <Image
         height={60}
         width={600}
         alt="Decorative line 3"
